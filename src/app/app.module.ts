@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { BotoneraComponent } from './botonera/botonera.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     FooterComponent,
     Pagina404Component,
     BotoneraComponent,
-    ContactoComponent
+    ContactoComponent,
+    ProyectosComponent
   ],
   imports: [
     BrowserModule,
