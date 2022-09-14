@@ -1,0 +1,66 @@
+/* ********************************* 
+                NAV 
+ ********************************* */
+
+ nav {
+    height: 40px;
+    background-color: #111;
+    display: flex;
+    color: #fff;
+}
+
+.nav__logo {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    
+}
+.nav__pacman {
+    height: 80%;
+    margin-top: -50px;
+    margin-left: 10px;
+    animation-name: comiendo;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes comiendo {
+    0% {
+        margin-top: -50px;
+        margin-left: 10px;
+    }
+    10%{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    90% {
+        margin-top: 10px;
+        margin-left: 80%;
+    }
+    100% {
+        margin-left: 80%;
+        margin-top: 50px;
+    }
+    
+}
+
+.nav__nombre {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.nav__loguin {
+margin: auto;
+margin-right: 20px;
+border: 1px solid rgb(20, 81, 20);
+color: rgb(4, 127, 4);
+padding: 5px;
+border-radius: 20%;;
+}
+
+.nav__loguin:hover {
+    background-color: rgb(13, 48, 13);
+    color: #ddd;
+    border: 1px solid #ddd
+}
