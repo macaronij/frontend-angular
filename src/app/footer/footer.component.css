@@ -17,7 +17,9 @@ footer {
 .footer__a:visited {
     color: #fff;
 }
-
+.footer__a:link {
+    color: #fff;
+}
 
 .footer__boton {
     margin: auto;
@@ -32,3 +34,4 @@ footer {
 .footer__boton:hover{
     background-color: #333;
 }
+
