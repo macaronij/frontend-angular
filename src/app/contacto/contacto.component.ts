@@ -11,5 +11,8 @@ export class ContactoComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  enviando() {
+    alert("NO IMPLEMENTADO AUN")
+  }
 }

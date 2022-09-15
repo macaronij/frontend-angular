@@ -2,7 +2,7 @@
     width: 100vw;
     height: calc(50vh - 90px);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 20px;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
