@@ -1,8 +1,8 @@
 .botonera {
     width: 100vw;
-    height: calc(50vh - 90px);
+    height: calc(50vh - 110px);
     display: grid;
-    grid-template-rows: 1fr 1fr 20px;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
