@@ -1,37 +1,93 @@
-.botonera {
-    width: 100vw;
-    height: calc(50vh - 110px);
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+/* ********************************* 
+               BANNER 
+ ********************************* */
+ .banner {
+    height: 50vh;
+    background-image: linear-gradient(to right, #333 , rgb(51, 53, 71));
 }
 
-#about {
-    background-image: url("/assets/about.png");
+.banner__img{
+    background-image: url("/assets/jf-bn.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    height: 100%; 
+    background-position: left top;
+    filter: contrast(150%);
+    overflow: visible;
+    display: flex;
 }
-#edu {
-    background-image: url("/assets/edu.png");
+
+
+.banner__texto {
+    color: #fff;;
+    font-size: 2em;
+    padding: 20px;
+    margin-top: auto;
+    margin-left: auto;
+    text-shadow: 3px 3px 5px #000, 2px 2px 5px #000, 2px 2px 5px #000, 2px 2px 5px #000;
 }
-#proyects {
-    background-image: url("/assets/proyectos.png");
+/* ********************************* 
+               BOTONERA 
+ ********************************* */
+
+.botonera {
+    width: 100%;
+    height: calc(50vh - 120px);
+    /* height: 50vh; */
+    display: flex;
+    gap: 15px;
+    align-content: center;
+    /* background-color: aqua; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
-#contact {
-    background-image: url("/assets/contact.png");
+
+.botonera__boton {
+    width: 300px;
+    height: 60px;
+    background-color: rgba(0,  0, 0, .5);
+    display: grid;
+    grid-template-columns: 60px,180px,60px;
+    border-radius: 15px;
 }
-.botonera__imagen {
-    background-size:contain;
+.botonera__boton:hover {
+    background-color: rgba(0,  0, 0, .8);
+}
+.botonera__img {
+    grid-column: 1/2;
+    background-size: 45px;
     background-repeat: no-repeat;
     background-position: center;
 }
-.botonera__imagen:hover {
-    filter: drop-shadow(10px 10px 5px #000);
+.botonera__texto {
+    grid-column: 2/3;
+    display: flex;
+}
+.botonera__texto span {
+    margin: auto;
+    color: #aaa;
 }
 
-a {
-    background:aqua;
+.botonera__signo {
+    grid-column: 3/4;
+    display: flex;
+}
+.botonera__signo span{
+    margin: auto;
+    color: #aaa;
+    font-size: 20px;
 }
 
-img {
-    height: 50%;
+
+#botonera__sobremi {
+    background-image: url("/assets/about.png");
+}
+#botonera__educacion {
+    background-image: url("/assets/edu.png");
+}
+#botonera__proyectos {
+    background-image: url("/assets/proyectos.png");
+}
+#botonera__contacto {
+    background-image: url("/assets/contact.png");
 }

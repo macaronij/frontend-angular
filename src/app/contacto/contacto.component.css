@@ -39,3 +39,9 @@ input:hover, textarea:hover {
 input::placeholder, textarea::placeholder{
     font-size: large;
 }
+
+.errores {
+    text-align: center;
+    color: #f00;
+    
+}

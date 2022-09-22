@@ -8,6 +8,16 @@
     display: flex;
     color: #fff;
 }
+.nav__home {
+    width: 60px;
+    background-image: url("/assets/home.png");
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.nav__home:hover{
+    background-color: #444;
+}
 
 .nav__logo {
     height: 100%;

@@ -1,18 +1,29 @@
-<app-nav></app-nav>
+
   
 <app-banner></app-banner>
 
 
 <div class="flex-container">
-
     <div class="botonera">
-        <div class="botonera__imagen" id="about" routerLink="/agrupados"></div>
-
-        <div class="botonera__imagen" id="edu" routerLink="/educacion"></div>
-
-        <div class="botonera__imagen" id="proyects" routerLink="/proyectos"></div>
-
-        <div class="botonera__imagen" id="contact" routerLink="/contacto"></div>
+        <div routerLink="/agrupados" class="botonera__boton">
+            <div class="botonera__img" id="botonera__sobremi"></div>
+            <span class="botonera__texto"> <span>Sobre mi</span> </span>
+            <span class="botonera__signo"> <span> > </span> </span>
+        </div>
+        <div routerLink="/educacion" class="botonera__boton">
+            <div class="botonera__img" id="botonera__educacion"></div>
+            <span class="botonera__texto"><span>Educacion</span></span>
+            <span class="botonera__signo"><span> > </span> </span>
+        </div>
+        <div routerLink="/proyectos" class="botonera__boton">
+            <div class="botonera__img" id="botonera__proyectos"></div>
+            <span class="botonera__texto"><span>Proyectos</span></span>
+            <span class="botonera__signo"><span> > </span> </span>
+        </div>
+        <div routerLink="/contacto" class="botonera__boton">
+            <div class="botonera__img" id="botonera__contacto"></div>
+            <span class="botonera__texto"><span>Contacto</span></span>
+            <span class="botonera__signo"><span> > </span> </span>
+        </div>
     </div>
-
 </div>
