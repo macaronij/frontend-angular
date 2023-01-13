@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { DatosPersonaService } from '../datos-persona.service';
+import { GuardarIdService } from '../guardar-id.service';
 
 @Component({
   selector: 'app-botonera',
@@ -8,12 +9,9 @@ import { RouterLink } from '@angular/router';
 })
 export class BotoneraComponent implements OnInit {
 
-  constructor() { }
+  constructor(private idservice:GuardarIdService, private data:DatosPersonaService) { }
+
 
   ngOnInit(): void {
-  }
-
-  about = () => {
-    RouterLink
   }
 }

@@ -1,0 +1,28 @@
+<div routerLink="/admin123" class="botonera__boton">
+    <div class="botonera__img" id="botonera__admin"></div>
+    <span class="botonera__texto"> <span>Admin</span> </span>
+    <span class="botonera__signo"> <span> > </span> </span>
+</div>
+
+<H3>SOBRE MI</H3>
+
+<div *ngIf="mensajeStatus" class="mensaje">{{mensajeTexto}}</div>
+
+<div class="container titulo">
+        <div>Organismo</div>
+        <div>descripcion</div>
+</div>
+
+<div class="container" *ngFor="let linea of datos">
+    <div>{{linea.titulo}}</div>
+    <div>{{linea.texto}}</div>
+    <div class="basura"><img src="/assets/basura.png" (click)="borrar(linea.id)"></div>
+</div>
+
+
+<form class="container" [formGroup]="form" (ngSubmit) = "enviando(form.value)"> 
+    <input type="hidden" id="id" name="id" formControlName="id">
+    <div><input type="text" name="titulo" placeholder="Titulo" formControlName="titulo"></div>
+    <div><input type="text" name="texto" placeholder="Texto" formControlName="texto"></div>
+    <button type="submit">AGREGAR</button>
+</form>

@@ -1,38 +1,13 @@
 <div class="recuadro" id="educacion">
-    <span class="recuadro__titulo"> Proyectos </span>
-    <div class="recuadro__item">
-        <img src="assets/jeanmermoz.jpg" alt="Liceo Jean Mermoz" class="recuadro__item-img">
+    <span class="recuadro__titulo"> Educacion </span>
 
-        <div class="recuadro__item-datos">
-            <b>Liceo Frances</b><br>
-            Primario y Secundario. Bacalaureat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis harum recusandae dolores beatae aliquid, perferendis quaerat ut itaque, quae, quas officia. Consequatur sapiente, iste voluptates rem itaque alias reiciendis quo?
-        </div>
-    </div>
 
-    <div class="recuadro__item">
-        <img src="assets/fce.jpg" alt="Economicas UBA" class="recuadro__item-img">
-
-        <div class="recuadro__item-datos">
-            <b>Estudiantes Economicas (incompleto)</b><br>
-            Carrera de Lic. en Economía (3 años)
-        </div>
-    </div>
-
-    <div class="recuadro__item">
-        <img src="assets/codoacodo.jpg" alt="codo a Codo" class="recuadro__item-img">
+    <div *ngFor="let edu of educacion" class="recuadro__item">
+        <img src="assets/{{edu.foto}}" alt="{{edu.foto}}" class="recuadro__item-img">
         
         <div class="recuadro__item-datos">
-            <b>Codo a Codo</b><br>
-            Full Stack Python
-        </div>
-    </div>
-
-    <div class="recuadro__item">
-        <img src="assets/arg-programa.png" alt="yo programo" class="recuadro__item-img">
-        
-        <div class="recuadro__item-datos">
-            <b>Argentina Programa</b><br>
-            Desarrollador Web  Junior
+            <b>{{edu.titulo}}</b><br>
+            {{edu.texto}}
         </div>
     </div>
 </div>

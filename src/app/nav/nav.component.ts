@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GuardarIdService } from '../guardar-id.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,8 +12,5 @@ export class NavComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
-  botonLoguin() {
-    alert("Todavia no desarrollado");
   }
 }

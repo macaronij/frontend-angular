@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina404',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pagina404Component implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+    console.error("ERROR PAGINA QUE NO EXISTE");
+    console.log("VOLVIENDO A INICIO...");
+    this.router.navigate(['/elegir']);
   }
 
 }

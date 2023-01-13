@@ -1,14 +1,13 @@
 <div class="recuadro" id="educacion">
     <span class="recuadro__titulo"> Proyectos </span>
-    
-    <div class="recuadro__item">
-        <a href="http://macaronij.pythonanywhere.com/index.html"><img src="assets/imprenta.png" alt="Liceo Jean Mermoz" class="recuadro__item-img"></a>
+
+    <div *ngFor="let proy of proyectos" class="recuadro__item">
+        <a href={{proy.enlace}}><img src="assets/{{proy.foto}}" alt="{{proy.foto}}" class="recuadro__item-img"></a>
 
         <div class="recuadro__item-datos">
-            <b>Imprenta</b><br>
-            Sitio básico de un local gráfico.
+            <b>{{proy.titulo}}</b><br>
+            {{proy.texto}}
         </div>
     </div>
-
-
+    
 </div>

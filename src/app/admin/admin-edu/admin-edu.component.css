@@ -1,0 +1,94 @@
+h3 {
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    margin-left: 20px;
+}
+
+.container div {
+    width: 200px;
+    background-color: #aaa;
+    margin-top: 10px;
+    margin-right: 5px;
+    color: #000;
+}
+
+.titulo div {
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+.container .basura{
+    width: 20px;
+    background-color: transparent;
+}
+.basura img {
+    height: 15px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    border: none;
+    width: 100px;
+    background-color: rgb(37, 87, 49);
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #fff;
+}
+/* PARA EL BOTON DE ADMIN */
+.botonera__boton {
+    margin: 20px;
+    width: 300px;
+    height: 60px;
+    background-color: rgba(0,  0, 0, .5);
+    display: grid;
+    grid-template-columns: 60px,180px,60px;
+    border-radius: 15px;
+}
+.botonera__boton:hover {
+    background-color: rgba(0,  0, 0, .8);
+}
+.botonera__img {
+    grid-column: 1/2;
+    background-size: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.botonera__texto {
+    grid-column: 2/3;
+    display: flex;
+}
+.botonera__texto span {
+    margin: auto;
+    color: #aaa;
+}
+
+.botonera__signo {
+    grid-column: 3/4;
+    display: flex;
+}
+.botonera__signo span{
+    margin: auto;
+    color: #aaa;
+    font-size: 20px;
+}
+
+#botonera__admin {
+    background-image: url("/assets/admin.png");
+}
+
+.mensaje {
+    margin-left: 30px;
+    width: 250px;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+<div routerLink="/admin123" class="botonera__boton">
+    <div class="botonera__img" id="botonera__admin"></div>
+    <span class="botonera__texto"> <span>Admin</span> </span>
+    <span class="botonera__signo"> <span> > </span> </span>
+</div>
+
+<H3>MENSAJES</H3>
+
+<div *ngIf="mensajeStatus" class="mensaje">{{mensajeTexto}}</div>
+
+<div class="container titulo">
+    <div>Nombre</div><div>Email</div><div>Mensaje</div>
+</div>
+
+<div class="container" *ngFor="let linea of datos">
+    <div>{{linea.nombre}}</div>
+    <div>{{linea.email}}</div>
+    <div>{{linea.mensaje}}</div>
+    <div class="basura"><img src="/assets/basura.png" (click)="borrar(linea.id)"></div>
+</div>
+

@@ -26,6 +26,7 @@ textarea {
 }
 button {
     background-color: green;
+    cursor: pointer;
 }
 
 input, textarea {
@@ -45,3 +46,4 @@ input::placeholder, textarea::placeholder{
     color: #f00;
     
 }
+

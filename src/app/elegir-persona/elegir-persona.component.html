@@ -1,0 +1,17 @@
+
+
+<span class="recuadro__titulo"> Seleccione perfil: </span>
+<div class="flex-container">
+    <div class=" recuadro__item" *ngFor="let persona of personas">
+        <img src="assets/{{persona.foto}}" alt="{{persona.nombre}}" class="recuadro__item-img" id={{persona.id}}>
+    
+        <div class="recuadro__item-datos">
+            <b>{{persona.nombre}}</b><br>
+            <b>id:</b> {{persona.id}} <b>Profesion:</b> {{persona.profesion}}
+            <div class="boton" (click)="guardarId(persona.id, persona.nombre, persona.foto, persona.profesion)" routerLink="/botonera">Seleccionar</div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="mensajeError" class="error">Parece que fallo la base de datos. <br> por favor intenta mas tarde</div>
+

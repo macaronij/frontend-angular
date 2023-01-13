@@ -1,7 +1,8 @@
 <div class="contenedor">
-    <form [formGroup]="form"  (ngSubmit)="enviando($event)"> 
+    <form [formGroup]="form"  (ngSubmit)="enviando(form.value)"> 
+        <input type="hidden" formControlName="id">
         <input type="text" placeholder="Nombre" formControlName="nombre">
-        <input type="text" placeholder="Correo Electronico" formControlName="correo">
+        <input type="text" placeholder="Correo Electronico" formControlName="email">
         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje..." formControlName="mensaje"></textarea>
         <button type="submit">Enviar!</button>
     </form>
@@ -10,6 +11,6 @@
 <div class="errores" *ngIf="Nombre?.touched && Nombre?.errors">
     <p> El Nombre tiene error</p>
 </div>
-<div class="errores" *ngIf="Correo?.touched && Correo?.errors">
+<div class="errores" *ngIf="Email?.touched && Email?.errors">
     <p> El Email tiene error</p>
 </div>
